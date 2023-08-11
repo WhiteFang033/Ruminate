@@ -1,0 +1,106 @@
+
+
+.bin{
+    display: flex;
+    height: calc(100vh - 80px);
+    width: calc(100vw - var(--menu_width));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.bin_nav{
+    background-color: var(--background_color);
+    width: calc(100vw - var(--menu_width));
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#empty_bin{
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    background-color: rgb(235, 58, 58);
+    padding: 7px 14px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.4s ease;
+    align-self: center;
+    position: relative;
+    right: 50px;
+}
+
+.bin_container{
+    display: flex;
+    height: calc(100vh - 70px - 80px - 40px);
+    width: calc(100vw - var(--menu_width));
+    background-color: var(--bg_color);
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.bin_container::-webkit-scrollbar {
+    display: none;
+}
+.del_card{
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px; 
+    background-image: url(../assets/bg_images/recycle.jpg);
+    margin: 30px 30px;
+    box-shadow: 0px 3px 6px var(--notes_shadow);
+    border: 3px solid var(--border);
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.restore{
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(133, 133, 133);
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.restore:hover{
+    background-color: rgb(184, 182, 182);
+    color: white;
+}
+.delete{
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    background-color: rgb(255, 75, 75);
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.delete:hover{
+    background-color: red;
+    color: white;
+}

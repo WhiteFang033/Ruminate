@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;1,6..12,200&display=swap');
+/* font-family: 'Kalam', cursive;
+font-family: 'Nunito Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color : black;
+    --bg_color: white;
+    --hover: rgb(208, 206, 206);
+    --shadow: 0px 0px 2px rgb(58, 57, 57);
+    --light_color: rgb(133, 133, 133);
+    --bg_image: url(../assets/bg_images/light1.jpg);
+
+
+    /* saved values */
+    --dark_hover: rgb(33, 32, 32);
+    --light_hover: rgb(208, 206, 206);
+    --menu_width: 80px;
+    --dark_shadow: 0px 0px 4px white;
+    --light_shadow: 0px 0px 2px rgb(58, 57, 57);
+}
+body{
+    overflow: hidden;
+    background-color: var(--bg_color);
+    transition: 0.4s ease;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg_color);
+    color: var(--color);
+    font-family: 'Nunito Sans', sans-serif;
+    transition: 0.4s ease;
+    z-index: -2;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    width: var(--menu_width);
+    height: 100vh;
+    background-color: var(--bg_color);
+    color: var(--color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: 0.2s ease;
+    z-index: 100;
+}
+.menu_tp{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.menu_tp p{
+    display: none;
+    font-size: 25px;
+    margin: 22px 0px;
+   
+}
+.menu_tp img{
+    height: 50px;
+    align-self: flex-start;
+   transition: 0.1s ease;
+}
+ul{
+    position: relative;
+    font-size: 20px;
+}
+ul li{
+    display: flex;
+    list-style-type: none;
+    margin: 30px 5px;
+    padding: 5px 10px;
+    height: 40px;
+    cursor: pointer;
+}
+ul li p{
+    display: none;
+    position: relative;
+    top: 2px;
+}
+ul li img{
+    height: 30px;
+    margin: 0;
+}
+
+.mode{
+    font-size: 20px;
+    display: flex;
+    margin: 30px 5px;
+    padding: 5px 10px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.mode img{
+    width: 30px;
+    position: relative;
+    align-self: center;
+}
+.mode p{
+    display: none;
+    position: relative;
+    top: 2px;
+}
+.profile{
+    display: none;
+} 
+.settings{
+    display: none;
+}
+.profile img{
+    width: 30px;
+    padding: 10px;
+}
+.settings img{
+    width: 30px;
+    padding: 10px;
+}
+.ps_cont{
+    display: flex;
+    justify-content: center;
+}
+
+.display_window{
+    height: 100vh;
+    width: calc(100vw - var(--menu_width));
+    background-color: var(--bg_color);
+    transition: 0.4s ease;
+}

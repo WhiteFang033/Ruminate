@@ -1,0 +1,207 @@
+:root{
+    --notes_shadow: rgb(177, 175, 175);
+    --notes_after_shadow: 0 3px 10px rgb(148, 146, 146);
+    --title_bg_clr: aliceblue;
+    --notes_before_bg: white;
+}
+
+.note{
+    transition: 0.4s ease;
+}
+.note_nav{
+    height: 70px;
+    width: calc(100vw - var(--menu_width));
+    background-color: var(--bg_color);
+    color: var(--color);
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+}
+
+.head img{
+    margin: 10px 0px;
+    height: 45px;
+}
+
+.head p{
+    margin: 10px 10px;
+}
+
+.add_note_before{
+    width: 40vw;
+    height: 40px;
+    border-radius: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light_color);
+    background-color: var(--notes_before_bg);
+    box-shadow: 0 3px 10px var(--notes_shadow);
+    border-radius: 4px;
+    margin: 8px 0px;
+    transition: 0.4s ease;
+    z-index: 10;
+}
+.add_note_before p{
+    position: relative;
+    background-color: var(--notes_before_bg);
+    left: 20px;
+    transition: 0.4s ease;
+}
+.note ul{
+    display: flex;
+    height: 55px;
+}
+
+.note ul li{
+    margin: 10px 10px;
+    padding: 0px 10px;
+}
+
+.add_note_after{
+    width: 40vw;
+    height: 250px;
+    border-radius: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    color: var(--light_color);
+    background-color: var(--bg_color);
+    box-shadow: var(--notes_after_shadow);
+    border-radius: 4px;
+    margin: 8px 0px;
+    z-index: 10;
+    transition: 0.4s ease;
+}
+
+.title_note{
+    align-self: center;
+    display: none;
+    width: 35vw;
+    height: 70px;
+    margin: 10px 0px;
+    padding: 5px 10px;
+    outline: none;
+    background-color: var(--title_bg_clr);
+    border-radius: 5px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    word-wrap: break-word;
+    transition: 0.4s ease;
+}
+.title_note p{
+    position: relative;
+    align-self: center;
+}
+
+.note_content{
+    display: none;
+    align-self: center;
+    width: 35vw;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    outline: none;
+    background-color: var(--title_bg_clr);
+    border-radius: 5px;
+    word-wrap: break-word;
+    transition: 0.4s ease;
+    padding: 5px 10px;
+}
+
+.note_content p{
+    position: relative;
+    align-self: flex-start;
+    left: 20px;
+}
+
+.button_input{
+    width: 40vw;
+    height: 50px;
+    display: none;
+    justify-content: flex-end;
+}
+
+#close_btn{
+    display: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--light_color);
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    background-color: var(--bg_color);
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+#save_btn{
+    display: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--light_color);
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    background-color: var(--bg_color);
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+#close_btn:hover {
+    background-color: var(--hover);
+    color: var(--color);
+}
+
+#save_btn:hover{
+    background-color: var(--hover);
+    color: var(--color);
+}
+
+.note_container{
+    display: flex;
+    height: calc(100vh - 70px - 80px - 40px);
+    width: calc(100vw - var(--menu_width));
+    background-color: var(--bg_color);
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.note_container::-webkit-scrollbar {
+    display: none;
+}
+
+#empty_local{
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    background-color: rgb(235, 58, 58);
+    padding: 7px 14px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.4s ease;
+    align-self: center;
+    position: relative;
+    right: 50px;
+}

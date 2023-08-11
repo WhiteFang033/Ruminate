@@ -1,0 +1,134 @@
+.profile_section{
+    display: flex;
+    height: calc(100vh - 80px);
+    width: calc(100vw - var(--menu_width));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile_nav{
+    background-color: var(--background_color);
+    width: calc(100vw - var(--menu_width));
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_nav p{
+    font-size: 30px;
+}
+
+.profile_content{
+    height: calc(100vh - 80px);
+    width: calc(100vw - var(--menu_width));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 10px;
+    overflow: hidden;
+}
+
+.input_profile{
+    display: flex;
+    width: 750px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_profile p{
+    margin: 10px 70px;
+    font-size: 20px;
+}
+
+#nameInput{
+    width: 250px;
+    margin: 10px 20px;
+    font-size: 17px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--light_color);
+    background-color: var(--notes_before_bg);
+    box-shadow: var(--task_adder_shadow);
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    align-self: center;
+    transition: 0.6s ease;
+}
+#nameInput:empty:before{
+    content: attr(data-text);
+  }
+
+.input_profile button{
+    margin: 10px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(8, 196, 8);
+    padding: 7px 14px;
+    border-radius: 3px;
+    border: none;
+    align-self: center;
+    transition: 0.6s ease;
+}
+
+.input_profile button:hover{
+    background-color: rgb(10, 228, 10);
+}
+.display_profile{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.display_name{
+    font-family: 'Klee One', cursive;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 20px auto;
+}
+.display_quote{
+    position: relative;
+    top: 60px;
+    font-family: 'Klee One', cursive;
+    font-size: 20px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quote_container{
+    position: relative;
+    top: 60px;
+    width: 710px;
+    height: 200px;
+    font-family: 'Klee One', cursive;
+    font-weight: 600;
+    font-size: 50px;
+    margin: 20px auto;
+    display: flex;
+}
+.quote_container img{
+    width: 50px;
+    height: 50px;
+}
+
+.quote_content{
+    width: 600px;
+    height: 180px;
+    font-size: 30px;
+    margin: auto 30px;
+    display: flex;
+    flex-direction: column;
+}
+.author{
+    align-self: flex-end;
+    font-size: 20px;
+    margin: 25px 5px;
+}

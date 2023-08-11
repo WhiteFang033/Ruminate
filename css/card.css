@@ -1,0 +1,126 @@
+:root{
+    --bg_image: url(../assets/bg_images/light1.jpg);
+    --border: black;
+    --cards_after_shadow:  0px 3px 6px rgb(177, 175, 175);
+}
+
+.card{
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px; 
+    background-image: var(--bg_image);
+    margin: 30px 30px;
+    box-shadow: 0px 3px 6px var(--notes_shadow);
+    border: 3px solid var(--border);
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s ease;
+    z-index: 5;
+}
+
+.card_title{
+    position: relative;
+    font-size: 25px;
+    margin: 10px auto;
+    z-index: 2;
+    outline: none;
+    color: black;
+    text-align: center;
+}
+.content_container{
+    height:212px;
+    width: auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    color: black;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.content_container::-webkit-scrollbar {
+    display: none;
+  }
+.card_content{
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 5px;
+    z-index: 2;
+    outline: none;
+}
+
+
+.card_after{
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-image: var(--bg_image);
+    background-size: cover;
+    margin: 30px 30px;
+    box-shadow: var(--cards_after_shadow);
+    border: 3px solid var(--border);
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9;
+    transition: 0.4s ease;
+}
+.card_options{
+    background-color: rgba(181, 173, 173, 0.425);
+    height: 56px;
+    width: 400px;
+    display: none;
+    justify-content:space-between;
+    align-items: center;
+}
+#card_close{
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(133, 133, 133);
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.4s ease;
+}
+#card_delete{
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    background-color: rgb(235, 58, 58);
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+#bg_images{
+    display: flex;
+    text-decoration: none;
+}
+
+#bg_images li{
+    margin: 0;
+    padding: 5px;
+}
+
+#bg_images li img{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 100px;
+    background-color: white;
+}

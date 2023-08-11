@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruminate</title>
+    <link rel="stylesheet" href="css/style_menu.css">
+    <link rel="stylesheet" href="css/defaults.css">
+    <link rel="stylesheet" href="css/style_dispwindow.css">
+    <link rel="stylesheet" href="css/notes.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/task.css">
+    <link rel="stylesheet" href="css/bin.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <!-- 
+        NOTE:    Inserting or Formatting the HTML may result in addition of text nodes.
+                 Though the chances are almost nil but this may failure the working of few funcitons of the website. 
+    -->
+    <div class="container">
+        <div class="menu">
+            <div class="menu_tp hover_true" id="menu_context"><img id='menu_icon' class="menu_img"
+                    src="assets/icons/menu.png" alt="">
+                <p id="menu_p">Menu</p>
+            </div>
+            <ul id="list_cont">
+                <li id="notes_icon" class="hover_true"><img class="menu_img" src="assets/icons/pen.png" alt="">
+                    <p class="menu_text">Note</p>
+                </li>
+                <li id="to_do_icon" class="hover_true"><img class="menu_img" src="assets/icons/list.png" alt="">
+                    <p class="menu_text">To-do List</p>
+                </li>
+                <li id="bin_icon" class="hover_true"><img class="menu_img" src="assets/icons/bin.png" alt="">
+                    <p class="menu_text">Recycle Bin</p>
+                </li>
+            </ul>
+            <div id='mode_id' class="mode hover_true"><img class="menu_img" src="assets/icons/dark_mode.png" alt="">
+                <p class="menu_text">Dark Mode</p>
+            </div>
+            <div class="ps_cont">
+                <div id="profile" class="profile hover_true"><img src="assets/icons/profile.png" alt=""></div>
+                <div id='settings' class="settings hover_true"><img src="assets/icons/settings.png" alt=""></div>
+            </div>
+
+        </div>
+        <div class="display_window" id="display_window_id">
+            <nav>
+                <div class="heading">Ruminate</div>
+                <div class="date">
+                    <div id="time_id"></div>
+                    <div id="date_id"></div>
+                </div>
+                <div class="links">
+                    <div class="github hover_true"><a href="#" target="_blank">View Source &#8599;</a></div>
+                    <div class="contact hover_true"><a href="contact.html" target="_blank">Contact &#8599;</a></div>
+                </div>
+            </nav>
+            <div class="content_window">
+                <div id="note" class="note">
+
+                    <div class="note_nav">
+                        <div class="head"><img src="assets/icons/pen.png" alt="">
+                            <p>Notes</p>
+                        </div>
+                        <div id="note_adder" class="add_note_before" role="textbox" contenteditable="false"
+                            aria-label="Take a note...">
+                            <div id="title" class="title_note" contentEditable=true data-text="Title"></div>
+                            <div id="content" class="note_content" contentEditable="true" data-text="Take a Note"></div>
+                            <div class="button_input">
+
+                                <button id="save_btn">Save</button>
+                                <button id="close_btn">Close</button>
+
+                            </div>
+                            <p>Take a Note...</p>
+                        </div>
+
+                        <button id="empty_local">Delete All Notes</button>
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="note_container">
+
+
+
+                        <div class="card">
+                            <div class="card_title">User Manual</div>
+                            <div class="content_container">
+
+                                <div class="card_content">
+                                    1. Welcome! This is a notes app called "Ruminate". It utilizes the Local Storage of
+                                    browser to store data since Local Storage of a browser withstand page reload and
+                                    even browser restart. So data won't be lost unless Local Storage itself is cleared
+                                    or browser is uninstalled.
+                                    <br>
+                                    <br>
+                                    2. This is a sample note engraved (written) in the original HTML document. It can be
+                                    deleted or edited but if Local Storage is affected, this card may appear again.
+                                    <br>
+                                    <br>
+                                    3. There are other like this sample note, namely sample task and a sample recycled
+                                    note. Both of them are written into the original HTML document and I think you
+                                    figured out what that means.
+                                    <br>
+                                    <br>
+                                    4. Each Note offers 3 options. First is background change option, clicking on the
+                                    round images will change the background. Second option is the Delete Option,
+                                    clicking this will delete the respective note from notes section but you can later
+                                    recycle it from Recycle Bin, in case you change your mind or your mouse might have
+                                    mis-clicked. The last option is close button, this does nothing but closes the
+                                    respective note, that's all.
+                                    <br>
+                                    <br>
+                                    5. That's all for now I think. Good Luck using this app!
+                                </div>
+                            </div>
+                            <div class="card_options">
+                                <ul id="bg_images">
+                                    <li><img src="assets/bg_images/dark_1.jpg" alt=""></li>
+                                    <li><img src="assets/bg_images/dark_2.jpg" alt=""></li>
+                                    <li><img src="assets/bg_images/dark_3.jpg" alt=""></li>
+                                    <li><img src="assets/bg_images/light1.jpg" alt=""></li>
+                                    <li><img src="assets/bg_images/light2.jpg" alt=""></li>
+                                    <li><img src="assets/bg_images/light3.jpg" alt=""></li>
+                                </ul>
+                                <button id="card_delete" class="card_delete">Delete</button>
+                                <button id="card_close">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="to_do" class="to_do">
+                    <div class="toDo_nav">
+                        <div class="head"><img src="assets/icons/list.png" alt="">
+                            <p>Tasks</p>
+                        </div>
+                        <button id="empty_tasks">Delete All Tasks</button>
+                    </div>
+                    <div class="task_container">
+
+                        <div class="task">
+                            <div class="task_text">This is a Sample Task. Speciality: This one has a bug.</div>
+                            <div class="task_optns">
+
+                                <button class="task_done hover_true">&#10004; Done</button>
+                                <button class="delete_task hover_true">Delete</button>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="task_adder">
+                        <div class="task_content" contenteditable="true" role="textbox" data-text="+   Add a Task"></div>
+                        <button id="addTask">Add</button>
+                    </div>
+                </div>
+                <div id="bin" class="recycle_bin">
+                    <div class="bin_nav">
+                        <div class="toDo_nav">
+                            <div class="head"><img src="assets/icons/bin.png" alt="">
+                                <p>Recycle Bin</p>
+                            </div>
+                            <button id="empty_bin">Empty Recycle Bin</button>
+                        </div>
+                    </div>
+                    <div class="bin_container">
+
+                        <div class="del_card">
+                            <div class="card_title">Sample Note</div>
+                            <div class="content_container">
+
+                                <div class="card_content">
+                                    This is a sample note. You can delete is card permanently by clicking the "Delete" Button or you can restore this card by clicking the "Restore" Button.
+                                </div>
+                            </div>
+                            <div class="bin_options">
+                                <button class="restore ">Restore</button>
+                                <button class="delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="profile_section" class="profile_section">
+                    <div class="profile_nav">
+                        <div class="head"><img src="assets/icons/profile.png" alt="">
+                            <p>Profile</p>
+                        </div>
+                    </div>
+
+                    <div class="profile_content">
+                        <div id="input_profile" class="input_profile">
+                            <p>Enter Your Name</p>
+                            <div id="nameInput" contenteditable="true" data-text="Eg. Baburao Ganpatrao Apte"></div>
+                            <button id="saveName">Save</button>
+                        </div>
+                        <div id="display_profile" class="display_profile">
+                            <div id="display_name" class="display_name">Good Evening, Baburao Ganpatrao Apte!</div>
+                            <div class="display_quote">
+                                <p>Here goes a random quote:</p>
+                                <div class="quote_container">
+                                    <img src="assets/icons/quote.png" alt="">
+                                    <div class="quote_content">
+                                        <div id="quote" class="quote">Nothing is Permanent</div>
+                                        <div id="author" class="author">- Fang</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div id="settings_section" class="settings_section">
+                    <div class="settings_nav">
+                        <div class="head"><img src="assets/icons/settings.png" alt="">
+                            <p>Settings</p>
+                        </div>
+                    </div>
+                    <div class="settings_content">
+                        <div class="options">
+                            <p>Empty Local Storage</p> <button id="empty_localStorage">Empty Local Storage</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/__note.js"></script>
+<script src="js/__card.js"></script>
+<script src="js/__menu.js"></script>
+<script src="js/__recycle.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/appendCard.js"></script>
+<script src="js/appendTask.js"></script>
+<script src="js/__task.js"></script>
+<script src="js/defaults.js"></script>
+<script src="js/mode_change.js"></script>
+<script src="js/data_saves.js"></script>
+<script src="js/__imageChange.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/test_field.js"></script>
+
+</html>

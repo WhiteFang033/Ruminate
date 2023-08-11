@@ -1,0 +1,173 @@
+:root{
+    --task_adder_shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+.to_do {
+    display: flex;
+    height: calc(100vh - 80px);
+    width: calc(100vw - var(--menu_width));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.task_adder {
+    order: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    max-height: 70px;
+    width: 50vw;
+    background-color: var(--notes_before_bg);
+    box-shadow: var(--task_adder_shadow);
+    border-radius: 5px;
+    z-index: 5;
+    bottom: 40px;
+}
+
+.task_content {
+    max-height: 50px;
+    width: 42vw;
+    outline: none;
+    color: var(--light_color);
+    padding: 10px;
+    font-size: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.task_content:empty:before {
+    position: relative;
+    content: attr(data-text);
+}
+
+
+#addTask {
+    display: none;
+    position: relative;
+    right: 10px;
+    height: 30px;
+    width: 60px;
+    align-self: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--light_color);
+    font-size: 17px;
+    margin: 10px;
+    background-color: var(--notes_before_bg);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+#addTask:hover{
+    background-color: var(--hover);
+}
+
+
+
+.task_container {
+    height: calc(100vh - 80px);
+    width: calc(100vw - var(--menu_width));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.task_container::-webkit-scrollbar {
+    display: none;
+}
+
+.task {
+    min-height: 30px;
+    width: 70vw;
+    background-color: var(--notes_before_bg);
+    box-shadow: 0 3px 10px var(--notes_shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.task_text{
+    min-height: 20px;
+    width: 50vw;
+    font-size: 17px;
+}
+
+.task_optns{
+    min-width: 50px;
+}
+
+.task_done{
+    display: none;
+    height: 30px;
+    width: 80px;
+    align-self: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--light_color);
+    font-size: 15px;
+    margin: 0px;
+    background-color: var(--notes_before_bg);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+.delete_task{
+    display: none;
+    height: 30px;
+    width: 60px;
+    align-self: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(248, 92, 92);
+    font-size: 15px;
+    margin: 0px;
+    background-color: var(--notes_before_bg);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.task:hover .task_optns .task_done{
+    display: inline;
+}
+.task:hover .task_optns .delete_task{
+    display: inline;
+}
+
+.toDo_nav{
+    background-color: var(--background_color);
+    width: calc(100vw - var(--menu_width));
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#empty_tasks{
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    background-color: rgb(235, 58, 58);
+    padding: 7px 14px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.4s ease;
+    align-self: center;
+    position: relative;
+    right: 50px;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;1,6..12,200&family=Source+Code+Pro:ital,wght@0,200;0,400;0,500;0,800;0,900;1,400;1,500&display=swap');
+
+/* font-family: 'Klee One', cursive;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.container{
+    position: relative;
+    top: 30px;
+    width: 100vw;
+    height: calc(100vh - 30px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.pfp{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100px;
+    background-image: url(../assets/images/kakashi\ sharingan.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid grey;
+}
+.name{
+    font-family: 'Source Code Pro', monospace;
+    color: grey;
+    font-size: 25px;
+    margin: 20px auto;
+}
+.contact{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin: 50px auto;
+}
+.content{
+    width: 70vw;
+    height: 300px;
+    background-color: #1d1e22;
+    margin-left: 60px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #717790;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-style: italic;
+}
+.contact ul{
+    margin: auto 80px;
+}
+.contact ul p{
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    font-size: 17px;
+    color: grey;
+}
+.contact ul li{
+    margin: 10px;
+}
+.contact ul li a{
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    font-size: 15px;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+.contact ul li a img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+.yellow{
+    display: inline;
+    color: #ddca7e;
+    font-weight: 500;
+    font-style: normal !important;
+}
+.blue{
+    display: inline;
+    color: #809bbd;
+    font-weight: 500;
+    font-style: normal !important;
+}
+.green{
+    display: inline;
+    color: #96b38a;
+    font-weight: 500;
+    font-style: normal !important;
+}
+.white{
+    display: inline;
+    color: white;
+    font-weight: 500;
+    font-style: normal !important;
+}

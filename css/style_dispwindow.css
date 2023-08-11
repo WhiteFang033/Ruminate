@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;1,6..12,200&display=swap');
+/* font-family: 'Klee One', cursive;
+font-family: 'Nunito Sans', sans-serif;
+;*/
+
+/* display window is at the back */
+
+nav{
+    width: calc(100vw - var(--menu_width));
+    height: 80px;
+    background-color: var(--bg_color);
+    transition: 0.4s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    z-index: 5;
+    margin-bottom: 1px;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+}
+
+.heading{
+    font-family: 'Klee One', cursive;
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    bottom: 6px;
+    left: 40px;
+    color: var(--color);
+}
+
+.date{
+    height: 80px;
+    width: 400px;
+    color: var(--color);
+    position: relative;
+    font-family: 'Klee One', cursive;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+#time_id{
+    font-size: 33px;
+    margin: 10px 40px
+}
+
+#date_id{
+    font-size: 17px;
+}
+
+
+.links{
+    width: 300px;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.github{
+    padding: 10px 20px;
+}
+.contact{
+    padding: 10px 20px;
+}
+
+.content_window{
+    height: calc(100vh - 80px);
+    width: calc(100vw - var(--menu_width));
+    z-index: 2;
+    display: flex;
+}
