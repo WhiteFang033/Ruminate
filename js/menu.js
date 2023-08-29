@@ -9,6 +9,7 @@ const bin_section = document.getElementById('bin')
 const settings_section = document.getElementById('settings_section')
 const profile_section = document.getElementById('profile_section')
 
+
 notes_opn.addEventListener('click', async (e)=>{
     note_section.style.display = 'block'
     toDo_section.style.display = 'none'

@@ -5,8 +5,13 @@ const title = document.getElementById('title')
 const content = document.getElementById('content')
 const note = document.getElementsByClassName('note')[0]
 const btn_input = document.getElementsByClassName('button_input')[0]
+const note_nav = document.getElementsByClassName('note_nav')[0]
 
 note_adder.addEventListener('click',(e)=>{
+    let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if(width < 555){
+        note_nav.style.height = '360px'
+    }
     note_adder.classList.add('add_note_after')
     note_adder.classList.remove('add_note_before')
     btn_input.style.display= 'flex'
@@ -19,6 +24,10 @@ note_adder.addEventListener('click',(e)=>{
 
 close_button.addEventListener('click', async (e)=>{
     await sleep(100)
+    let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if(width < 555){
+        note_nav.style.height = '170px'
+    }
     note_adder.classList.remove('add_note_after')
     note_adder.classList.add('add_note_before')
     btn_input.style.display = 'none'

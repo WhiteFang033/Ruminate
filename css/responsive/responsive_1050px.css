@@ -1,0 +1,157 @@
+@media only screen and (max-width: 1050px) {
+    .heading {
+        font-size: 35px;
+    }
+
+    .date {
+        height: 80px;
+        width: 340px;
+        left: 25px;
+    }
+
+    #time_id {
+        font-size: 28px;
+        margin: 10px 40px
+    }
+
+    #date_id {
+        font-size: 13px;
+    }
+
+
+    .links {
+        font-size: 15px;
+        width: 250px;
+    }
+
+    .head {
+        font-size: 25px;
+    }
+
+    .head img {
+        height: 35px;
+    }
+
+    .add_note_before {
+        width: 40vw;
+        height: 35px;
+        font-size: 17px;
+        margin: 8px 0px;
+    }
+    .note_nav{
+        width: calc(100vw - var(--menu_width) + 20px);
+    }
+    .add_note_after {
+        font-size: 17px;
+    }
+
+    #empty_local {
+        font-size: 12px;
+        margin: 8px;
+        padding: 6px 12px;
+        bottom: 9px;
+        right: 0;
+    }
+
+
+    .card {
+        height: 250px;
+        width: 170px;
+    }
+
+    .card_title {
+        font-size: 20px;
+    }
+
+    .card_content {
+        font-size: 14px;
+    }
+
+    .card_after {
+        height: 350px;
+        width: 240px;
+        margin: 30px 30px;
+    }
+
+    .card_options {
+        height: 40px;
+        width: 240px;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #bg_images li {
+        margin: auto 0;
+        padding: 2px;
+    }
+
+    #bg_images li img {
+        top: 9px;
+        left: 3px;
+        height: 15px;
+        width: 15px;
+        border-radius: 100px;
+        background-color: white;
+    }
+
+    #card_delete {
+        font-size: 13px;
+        margin: auto 2px;
+        padding: 3px 6px;
+    }
+
+    #card_close {
+        font-size: 13px;
+        align-self: flex-end;
+        margin: auto 2px;
+        background-color: white;
+        padding: 3px 6px;
+        border-radius: 3px;
+    }
+
+    .menu {
+        width: calc(var(--menu_width) - 20px);
+    }
+
+    .menu_tp img {
+        height: 35px;
+        align-self: flex-start;
+        transition: 0.1s ease;
+    }
+
+    nav {
+        width: calc(100vw - var(--menu_width) + 20px);
+        height: 70px;
+    }
+
+    .display_name {
+        font-family: 'Klee One', cursive;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 0px auto;
+    }
+
+    .display_profile {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .display_quote{
+        margin: 0 10px;
+    }
+
+    .quote_content {
+        width: 600px;
+        height: 180px;
+        font-size: 30px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .profile_content{
+        overflow-y: auto;
+    }
+}

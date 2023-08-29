@@ -1,0 +1,47 @@
+@media only screen and (max-width: 900px) {
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .date {
+        height: 80px;
+        width: 290px;
+        left: 25px;
+    }
+
+    #time_id {
+        font-size: 22px;
+        margin: 10px 40px
+    }
+
+    #date_id {
+        font-size: 11px;
+    }
+
+    .links {
+        font-size: 12px;
+    }
+
+    .head {
+        font-size: 22px;
+    }
+
+    .head img {
+        height: 30px;
+    }
+
+    .add_note_after {
+        font-size: 17px;
+    }
+
+    nav {
+        width: calc(100vw - var(--menu_width) + 20px);
+        height: 65px;
+    }
+
+    .note_nav{
+        width: calc(100vw - var(--menu_width) + 20px);
+    }
+
+}

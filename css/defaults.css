@@ -33,7 +33,18 @@ a{
 
 #title:empty:before{
     content: attr(data-text);
-  }
+}
 #content:empty:before{
     content: attr(data-text);
-  }
+}
+
+
+@media only screen and (max-width:1050px) {
+    
+    .border_white{
+        border: 2px solid white;
+    }
+    .border_black{
+        border: 2px solid black;
+    }
+}

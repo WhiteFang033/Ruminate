@@ -1,0 +1,34 @@
+@media only screen and (max-width:400px) {
+    .card {
+        margin: 10px 4px;
+    }
+
+    .display_quote {
+        font-size: 14px;
+    }
+
+    .quote_content {
+        width: 230px;
+        height: 180px;
+        font-size: 15px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_nav p {
+        font-size: 20px;
+    }
+    .profile_nav img {
+        height: 27px;
+    }
+
+    .settings_nav p {
+        font-size: 20px;
+    }
+    .settings_nav img{
+        height: 27px;
+    }
+
+
+}

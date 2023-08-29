@@ -22,7 +22,7 @@ function time(){
             
           }
       }
-    else if(hour>12)
+    else if(hour>=12)
       {
         postfix = "PM"
        if(hour<22)
@@ -55,6 +55,7 @@ function salutation(){
 
     const d = new Date();
     let hour = d.getHours(); //fetching Hours
+    console.log(hour)
 
     if(hour>=0 && hour<3){
       return 'Good Evening'

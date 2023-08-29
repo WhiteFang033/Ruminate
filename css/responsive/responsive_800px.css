@@ -1,0 +1,141 @@
+@media only screen and (max-width: 800px) {
+    .heading {
+        font-size: 22px;
+        left: 20px;
+    }
+
+    .date {
+        height: 80px;
+        width: 200px;
+        left: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #time_id {
+        font-size: 1.15em;
+        margin: 10px 16px
+    }
+
+    #date_id {
+        font-size: 9px;
+    }
+
+    .links {
+        font-size: 10px;
+        width: 170px;
+    }
+
+    .head {
+        font-size: 18px;
+    }
+
+    .head img {
+        height: 25px;
+    }
+
+    .add_note_before {
+        width: 35vw;
+        height: 30px;
+        font-size: 15px;
+        margin: 8px 0px;
+    }
+
+    .add_note_after {
+        font-size: 15px;
+    }
+
+    #empty_local {
+        font-size: 10px;
+        margin: 5px;
+        padding: 5px 10px;
+        bottom: 12px;    
+        right: 5px;
+    }
+
+    .github{
+        padding: 8px 8px;
+    }
+
+    .menu {
+        width: calc(var(--menu_width) - 30px);
+    }
+
+    .menu_tp img {
+        height: 30px;
+        align-self: flex-start;
+        transition: 0.1s ease;
+    }
+
+    nav {
+        width: calc(100vw - var(--menu_width) + 30px);
+        height: 70px;
+    }
+    ul {
+        position: relative;
+        font-size: 13px;
+    }
+    ul li img {
+        height: 25px;
+        margin: 0;
+    }
+
+    .mode {
+        font-size: 17px;
+    }
+
+    .note_nav {
+        width: calc(100vw - var(--menu_width) + 30px);
+    }
+
+    .card {
+        height: 220px;
+        width: 140px;
+    }
+
+    .card_title {
+        font-size: 15px;
+    }
+
+    .card_content {
+        font-size: 10px;
+    }
+
+    .card_after {
+        height: 300px;
+        width: 210px;
+        margin: 30px 30px;
+    }
+
+    .card_options {
+        height: 30px;
+        width: 210px;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #card_delete {
+        font-size: 10px;
+        margin: auto 2px;
+        padding: 2px 4px;
+    }
+
+    #card_close {
+        font-size: 10px;
+        align-self: flex-end;
+        margin: auto 2px;
+        background-color: white;
+        padding: 2px 4px;
+        border-radius: 3px;
+    }
+
+    .menu_tp p {
+        display: none;
+        font-size: 20px;
+        margin: 17px 0px;
+    }
+    .menu_text{
+        margin: 2px 2px;
+    }
+}
